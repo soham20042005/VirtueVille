@@ -652,15 +652,13 @@ export default class GameScene extends Phaser.Scene {
       this.inParkingLotScene = false;
       this.input.keyboard.enabled = true;
 
-     // Mark parking lot task as completed
-markTaskCompleted("GameScene");  // 👈 make sure the key matches the minimap node’s key
 saveProgress();
 console.log("✅ Parking lot task completed");
 
 // ✅ Update minimap dot color immediately
 const gameScene = this.scene.get("GameScene");
 if (gameScene?.updateMinimapDotColor) {
-  gameScene.updateMinimapDotColor("ParkingLotScene");
+  gameScene.updateMinimapDotColor("ParkingLot");
 }
 
       console.log(

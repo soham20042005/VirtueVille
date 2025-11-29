@@ -381,7 +381,7 @@ class UIScene1 extends Phaser.Scene {
       .text(
         leftMargin + 20,
         yStart + 25,
-        "WASD or Arrow Keys - Move your character",
+        "Arrow Keys - Move your character",
         {
           fontSize: "15px",
           fontFamily: "Arial, sans-serif",
